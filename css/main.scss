@@ -1,0 +1,19 @@
+// vars
+$mainColor: #236068;
+$secondColor: #393e40;
+$textColor: #666f73;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+
+// styles
+@import "sections/header";
+@import "sections/footer"; 
+     
+// code
+/*.main {
+    @include flexbox();
+}*/

@@ -1,0 +1,73 @@
+.footer {
+    background-color: #2e2e2e;
+    color: rgba(115,115,115,1);
+    font-family: 'Open Sans';
+}
+/* ----========== SUBSCRIBE =========----*/
+.footer-subscribe {
+    background-color: $secondColor;
+}
+.footer-subscribe .container{
+    @include flexbox();
+    @include justify-content(center);
+    padding: 20px 0;
+    background-color: $secondColor;
+}
+.footer-subscribe_text {
+    @include flexbox();
+    @include align-items(center);
+    padding: 0 50px;
+}
+.footer_search .search_block {
+    width: 315px;
+    height: 50px;
+    input {
+        padding-left: 40px;
+    }
+}
+.footer_search .submit {
+    background-color: $mainColor;
+    width: 180px;
+}
+/* ----========== FOOTER MAIN =========----*/
+.footer-main .container {
+    @include flexbox();
+    padding: 85px 0;
+    border-bottom: 1px solid $secondColor;
+}
+.footer-main_logo, .footer-main_nav, .footer-main_contacts, .footer-main_socials {
+    width: 25%;
+}
+.footer-main_logo .logo{
+    background-color: #2e2e2e;
+    padding-left: 0;
+}
+.footer-main_menu a {
+    transition: 0.2s;
+    color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+}
+.footer-main_menu a.active {
+    opacity: 1;
+}
+.footer-main_menu a:hover {
+    opacity: 1;
+}
+/* ----========== CONTACTS =========----*/
+.footer-main_contacts .contacts_list {
+    @include flex-direction(column);
+    border-bottom: none;
+    margin-left: 0;
+}
+.footer-main_contacts .contacts_list_element {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+/* ----========== FOOTER BOT =========----*/
+.footer-bot .container{
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 20px 0;
+}
