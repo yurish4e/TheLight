@@ -19,6 +19,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -804,7 +810,7 @@ footer {
   -webkit-box-pack: center;
   justify-content: center;
   -ms-flex-pack: center;
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #393e40; }
 
 .footer-subscribe_text {
@@ -827,6 +833,11 @@ footer {
   .footer_search .search_block input {
     padding-left: 40px; }
 
+.footer_search .submit input {
+  font-size: 10px;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 1px; }
+
 .footer_search .submit {
   background-color: #236068;
   width: 180px; }
@@ -838,7 +849,7 @@ footer {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding: 85px 0;
+  padding: 85px 0 50px;
   border-bottom: 1px solid #393e40; }
 
 .footer-main_logo, .footer-main_nav, .footer-main_contacts, .footer-main_socials {
@@ -848,7 +859,16 @@ footer {
   background-color: #2e2e2e;
   padding-left: 0; }
 
-.footer-main_menu a {
+.footer-main_logo .logo h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #666f73;
+  letter-spacing: 9px; }
+
+.sub-menu_item {
+  padding-bottom: 15px; }
+
+.sub-menu .sub-menu_item_link {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -856,10 +876,10 @@ footer {
   opacity: 0.3;
   text-decoration: none; }
 
-.footer-main_menu a.active {
+.sub-menu .sub-menu_item_link.active {
   opacity: 1; }
 
-.footer-main_menu a:hover {
+.sub-menu .sub-menu_item_link:hover {
   opacity: 1; }
 
 /* ----========== CONTACTS =========----*/
@@ -871,12 +891,34 @@ footer {
   -webkit-box-direction: normal;
   flex-direction: column;
   border-bottom: none;
+  padding: 0;
   margin-left: 0; }
 
 .footer-main_contacts .contacts_list_element {
+  font-size: 13px;
   background: none;
   margin: 0;
-  padding: 0; }
+  padding: 0 0 15px 0;
+  color: #fff; }
+
+/* ----========== SOCIAL =========----*/
+.socials_text {
+  color: #fff; }
+
+.socials_links {
+  padding-top: 20px; }
+
+.fb, .vk {
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
+
+.fb {
+  background: url(../img/fb.png) center no-repeat;
+  margin-right: 5px; }
+
+.vk {
+  background: url(../img/vk.png) center no-repeat; }
 
 /* ----========== FOOTER BOT =========----*/
 .footer-bot .container {
@@ -891,7 +933,7 @@ footer {
   -webkit-box-pack: justify;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  padding: 20px 0; }
+  padding: 15px 0; }
 
 /*.main {
     @include flexbox();

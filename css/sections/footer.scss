@@ -10,7 +10,7 @@
 .footer-subscribe .container{
     @include flexbox();
     @include justify-content(center);
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: $secondColor;
 }
 .footer-subscribe_text {
@@ -25,6 +25,11 @@
         padding-left: 40px;
     }
 }
+.footer_search .submit input {
+    font-size: 10px; 
+    font-family: 'OpenSans-Bold';
+    letter-spacing: 1px;
+}
 .footer_search .submit {
     background-color: $mainColor;
     width: 180px;
@@ -32,7 +37,7 @@
 /* ----========== FOOTER MAIN =========----*/
 .footer-main .container {
     @include flexbox();
-    padding: 85px 0;
+    padding: 85px 0 50px;
     border-bottom: 1px solid $secondColor;
 }
 .footer-main_logo, .footer-main_nav, .footer-main_contacts, .footer-main_socials {
@@ -42,32 +47,65 @@
     background-color: #2e2e2e;
     padding-left: 0;
 }
-.footer-main_menu a {
+.footer-main_logo .logo h2 {
+    margin: 0;
+    font-size: 16px;
+    color: $textColor;
+    letter-spacing: 9px;
+}
+.sub-menu_item {
+    padding-bottom: 15px;
+}
+.sub-menu .sub-menu_item_link {
     transition: 0.2s;
     color: #fff;
     opacity: 0.3;
     text-decoration: none;
 }
-.footer-main_menu a.active {
+.sub-menu .sub-menu_item_link.active {
     opacity: 1;
 }
-.footer-main_menu a:hover {
+.sub-menu .sub-menu_item_link:hover {
     opacity: 1;
 }
 /* ----========== CONTACTS =========----*/
 .footer-main_contacts .contacts_list {
     @include flex-direction(column);
     border-bottom: none;
+    padding: 0;
     margin-left: 0;
 }
 .footer-main_contacts .contacts_list_element {
+    font-size: 13px;
     background: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 15px 0;
+    color: #fff;
 }
+/* ----========== SOCIAL =========----*/
+.socials_text {
+    color: #fff;
+}
+.socials_links {
+    padding-top: 20px;
+}
+.fb, .vk {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+.fb {
+    background: url(../img/fb.png) center no-repeat;    
+    margin-right: 5px;
+}
+.vk {
+    background: url(../img/vk.png) center no-repeat;    
+}
+
+
 /* ----========== FOOTER BOT =========----*/
 .footer-bot .container{
     @include flexbox();
     @include justify-content(space-between);
-    padding: 20px 0;
+    padding: 15px 0;
 }
