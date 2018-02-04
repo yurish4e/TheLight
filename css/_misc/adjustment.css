@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box; }
+
+body, html {
+  font-family: 'Open Sans';
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 14px;
+  line-height: 25px;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  min-height: 200%;
+  overflow: hidden;
+  position: relative;
+  min-width: 1200px; }
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+  z-index: 5; }
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 530px;
+  overflow: hidden; }
+
+li {
+  list-style: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+footer {
+  background: #ccc;
+  height: 530px;
+  width: 100%;
+  margin-top: -530px;
+  position: relative;
+  min-width: 1080px; }
+
+/*# sourceMappingURL=adjustment.css.map */

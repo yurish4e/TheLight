@@ -2,6 +2,8 @@
 $mainColor: #236068;
 $secondColor: #393e40;
 $textColor: #666f73;
+$textColorGrey: #808080;
+$textColorGreen: #236068;
 
 // layout
 @import "_misc/fonts";
@@ -12,8 +14,10 @@ $textColor: #666f73;
 // styles
 @import "sections/header";
 @import "sections/footer"; 
+@import "sections/about"; 
      
 // code
 /*.main {
     @include flexbox();
-}*/ 
+}*/  
+   

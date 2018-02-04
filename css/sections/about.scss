@@ -1,0 +1,124 @@
+.main {
+    padding-bottom: 150px;
+}
+
+/* ----========== BREADCRUMB =========----*/
+
+.breadcrumb {
+    @include flexbox();
+    @include justify-content(center);
+    padding: 32px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.breadcrumb_item:first-child {
+    font-weight: 600;
+}
+
+.breadcrumb_link {
+    text-decoration: none;
+    font-family: 'OpenSans-Bold';
+    color: #4c4c4c;
+
+}
+
+.breadcrumb_link:visited {
+    color: #4c4c4c;
+}
+
+.breadcrumb_link-separator {
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.breadcrumb_link-separator::before {
+    content: ">";
+    padding: 0 15px;
+}
+
+/* ----========== TITLE  =========----*/
+
+.logo_title {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0;
+    background-color: #fff;
+    h2 {
+        letter-spacing: 11px;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    h2,
+    span {
+        color: $textColorGreen;
+    }
+}
+
+/* ----========== TEXT  =========----*/
+
+.column {
+    padding-top: 30px;
+    letter-spacing: 0.4px;
+    -webkit-column-width: 570px;
+    -moz-column-width: 570px;
+    column-width: 570px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    p {
+        color: $textColorGrey;
+        margin-bottom: 25px;
+    }
+}
+
+.column p:first-child {
+    margin-top: 0;
+}
+
+.advantages {
+    @include flexbox();
+    @include justify-content(space-around);
+    padding: 100px 0;
+}
+
+.advantages_item {
+    text-align: center;
+    width: 275px;
+    padding: 70px 0 55px;
+    background: url(../img/advantages_1.png) top center no-repeat;
+    h3 {
+        color: $textColorGreen;
+        font-family: 'Exo2-SemiBold';
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+    p {
+        color: $textColorGrey;
+        line-height: 22px;
+    }
+}
+.advantages_item:nth-child(2) {
+    background: url(../img/advantages_2.png) top center no-repeat;
+}
+.advantages_item:nth-child(3) {
+    background: url(../img/advantages_3.png) top center no-repeat;
+}
+
+/* ----========== SIGNATURE  =========----*/
+
+.sub {
+    text-align: center;
+    h1 {
+        color: $textColorGreen;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    span {
+        color: $textColorGrey;
+    }
+}

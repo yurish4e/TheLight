@@ -1,23 +1,33 @@
 .footer {
     background-color: #2e2e2e;
-    color: rgba(115,115,115,1);
-    font-family: 'Open Sans';
+    color: rgba(115, 115, 115, 1);
 }
+
 /* ----========== SUBSCRIBE =========----*/
+
 .footer-subscribe {
-    background-color: $secondColor;
+    background-color: #333333;
 }
-.footer-subscribe .container{
+
+.footer-subscribe .container {
     @include flexbox();
     @include justify-content(center);
     padding: 10px 0;
-    background-color: $secondColor;
 }
+
 .footer-subscribe_text {
     @include flexbox();
     @include align-items(center);
-    padding: 0 50px;
+    padding-right: 50px;
+    p {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+
+    }
 }
+
 .footer_search .search_block {
     width: 315px;
     height: 50px;
@@ -25,87 +35,124 @@
         padding-left: 40px;
     }
 }
+
 .footer_search .submit input {
-    font-size: 10px; 
+    font-size: 10px;
     font-family: 'OpenSans-Bold';
     letter-spacing: 1px;
 }
+
 .footer_search .submit {
     background-color: $mainColor;
     width: 180px;
 }
+
 /* ----========== FOOTER MAIN =========----*/
+
 .footer-main .container {
     @include flexbox();
     padding: 85px 0 50px;
     border-bottom: 1px solid $secondColor;
 }
-.footer-main_logo, .footer-main_nav, .footer-main_contacts, .footer-main_socials {
+
+.footer-main_logo,
+.footer-main_nav,
+.footer-main_contacts,
+.footer-main_socials {
     width: 25%;
 }
-.footer-main_logo .logo{
+
+.footer-main_logo .logo {
     background-color: #2e2e2e;
     padding-left: 0;
 }
+
 .footer-main_logo .logo h2 {
     margin: 0;
     font-size: 16px;
     color: $textColor;
     letter-spacing: 9px;
 }
+
 .sub-menu_item {
     padding-bottom: 15px;
 }
+
 .sub-menu .sub-menu_item_link {
     transition: 0.2s;
     color: #fff;
     opacity: 0.3;
     text-decoration: none;
 }
+
+.sub-menu_item_link {
+    font-size: 13px;
+}
+
 .sub-menu .sub-menu_item_link.active {
     opacity: 1;
 }
+
 .sub-menu .sub-menu_item_link:hover {
     opacity: 1;
 }
+
 /* ----========== CONTACTS =========----*/
-.footer-main_contacts .contacts_list {
-    @include flex-direction(column);
-    border-bottom: none;
-    padding: 0;
-    margin-left: 0;
+
+.footer-main_contacts {
+    .contacts_list {
+        @include flex-direction(column);
+        border-bottom: none;
+        padding: 0;
+        margin-left: 0;
+    }
+    .contacts_list_element {
+        font-family: 'OpenSans-Bold';
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        background: none;
+        margin: 0;
+        padding: 0 0 15px 0;
+        color: #fff;
+    }
 }
-.footer-main_contacts .contacts_list_element {
-    font-size: 13px;
-    background: none;
-    margin: 0;
-    padding: 0 0 15px 0;
-    color: #fff;
-}
+
+
 /* ----========== SOCIAL =========----*/
+
 .socials_text {
     color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.5px;
 }
+
 .socials_links {
-    padding-top: 20px;
+    padding-top: 15px;
 }
-.fb, .vk {
+
+.fb,
+.vk {
     display: inline-block;
     height: 30px;
     width: 30px;
 }
+
 .fb {
-    background: url(../img/fb.png) center no-repeat;    
+    background: url(../img/fb.png) center no-repeat;
     margin-right: 5px;
 }
+
 .vk {
-    background: url(../img/vk.png) center no-repeat;    
+    background: url(../img/vk.png) center no-repeat;
 }
 
 
 /* ----========== FOOTER BOT =========----*/
-.footer-bot .container{
+
+.footer-bot .container {
     @include flexbox();
     @include justify-content(space-between);
-    padding: 15px 0;
+    padding-top: 21px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 }

@@ -93,7 +93,6 @@
 }
 
 .contacts_list_element {
-    font-family: 'Open Sans';
     font-size: 11px;
     margin-right: 67px;
     padding-left: 35px;
@@ -117,7 +116,7 @@
 .header-right_bot {
     @include flexbox();
     @include align-items(center);
-    @include justify-content(space-between) 
+    @include justify-content(space-between); 
 }
 .search {
     @include flexbox();
@@ -182,7 +181,6 @@
 .basket {
     @include flexbox();
     @include align-items(flex-end);
-    font-family: 'Open Sans';
     font-size: 12px;
     height: 70px;
     margin: 0 32px 0 0;
@@ -236,7 +234,6 @@
 }
 .nav-link {
     font-size: 14px;
-    font-family: 'Open Sans';
 }
 .nav-element:nth-child(1) {
     background: url(../img/nav_1.png) top center no-repeat;
