@@ -46,6 +46,9 @@
     background-color: $mainColor;
     width: 180px;
 }
+.footer_search .submit:hover {
+    background-color: darken($mainColor, 10);
+}
 
 /* ----========== FOOTER MAIN =========----*/
 
