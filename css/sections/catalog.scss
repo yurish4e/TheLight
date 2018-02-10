@@ -1,0 +1,164 @@
+.catalog {
+    @include flexbox();
+    .pagination {
+        margin: 0;
+    }
+}
+.categories {
+    width: 280px;
+    background-color: #fafafa;
+    padding: 20px;
+    ul {
+        padding: 0;
+    }
+}
+.categories-menu {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.categories-menu_item, .products-group_title, .products-group_list-item{
+    margin-bottom: 20px;
+}
+.categories-menu_item, .products-group_title {
+    padding-left: 20px;
+}
+.categories-menu_link, .products-group_title {
+    font-size: 13px;
+    font-family: 'OpenSans-Bold';
+    color: $mainColor;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.products-group_title {
+    cursor: pointer;
+}
+.products-group_list {
+    display: none;
+}
+.products-group_list-item {
+    @include flexbox();
+    @include align-items(center);
+}
+.item-name {
+    margin: 0;
+    padding-left: 10px;
+    cursor: default;
+}
+.item-checkbox {
+    transition: 0.2s;
+    width: 20px;
+    height: 20px;
+    background-color: #e6e6e6;
+    border: 5px solid #e6e6e6;
+    cursor: pointer;
+}
+.list-item_active {
+    .item-checkbox {
+    background-color: #b3b3b3;
+}
+}
+.item-checkbox:hover {
+    background-color: #b3b3b3;
+}
+
+
+.categories-menu {
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+} 
+/* ----========== CATALOG VIEW  =========----*/
+.catalog-main {
+    width: 100%;
+    margin-left: 20px;
+    padding-bottom: 80px;
+}
+.catalog-main_header {
+    background-color: #fafafa;
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.catalog-main_list {
+    @include flexbox();
+    flex-wrap: wrap;
+}
+/* ----========== CATALOG HEAD  =========----*/
+.sorting_name, .sorting_item {
+    margin-right: 15px;
+    font-family: 'Open Sans';
+}
+.sorting_item {
+    cursor: pointer;
+}
+.sorting_active {
+    font-family: 'OpenSans-Bold';
+}
+/* ----========== CATALOG ITEM  =========----*/
+.catalog-item {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    @include align-items(center);
+    position: relative;
+    text-align: center;
+    width: 310px;
+    background-color: #fff;
+    padding-top: 40px;
+}
+.catalog-item:nth-child(3n+2) {
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+}
+
+.catalog-item:hover {
+    z-index: 10;
+    box-shadow: 0px 15px 25px 0px rgba(51, 51, 51, 0.2);
+}
+.catalog-item::before {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: #fff;
+}
+/* ----========== ITEM NAME  =========----*/
+.catalog-item_name {
+    padding: 0 25px 0;
+}
+/* ----========== BUTTON ADD TO CART  =========----*/
+.button-regular_cart {
+    width: 100%;
+    border-radius: 0;
+    text-transform: uppercase;
+    opacity: 0;
+}
+.button-regular_cart::before {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    content: "";
+    z-index: 10;
+    height: 20px;
+    width: 1px;
+    background-color: #d5d5d5;
+}
+.button-regular_cart::after {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    content: "";
+    z-index: 10;
+    height: 20px;
+    width: 1px;
+    background-color: #d5d5d5;
+}
+.catalog-item:hover .button-regular_cart {
+    opacity: 1;
+}
+
