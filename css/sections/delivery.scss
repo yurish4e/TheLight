@@ -1,0 +1,39 @@
+.payment-info {
+    .payment {
+        @include justify-content(flex-end); 
+        margin-bottom: 250px;
+    }
+    .payment_type {
+        display: block;
+        border: 0;
+        width: 260px;
+        margin-left: 20px;
+        padding: 0;  
+        h3 {
+           text-align: left; 
+           background-position: left top;
+            padding-top: 120px;
+        }
+        
+    }
+}
+.delivery-info {
+    padding-bottom: 100px;
+    .delivery {
+        @include justify-content(flex-end); 
+        margin-bottom: 250px;
+    }
+    .delivery_type {
+        display: block;
+        border: 0;
+        width: 260px;
+        margin-left: 20px;
+        padding: 0;    
+        h3 {
+           text-align: left; 
+           background-position: left top;
+           padding-top: 120px;
+            font-size: 18px;
+        }
+    }
+}

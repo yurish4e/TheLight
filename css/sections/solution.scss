@@ -25,10 +25,11 @@
 /* ----========== MAIN  =========----*/
 
 .solutions-text {
-    font-family: 'Open Sans';
-    color: #808080;
-    p {
-        margin: 45px 0;
+    p{
+        margin: 50px 0;
+        letter-spacing: 0.4px;
+        color: #999999;
+        font-family: 'Open Sans';
     }
 }
 .title-mid {
@@ -54,6 +55,15 @@
         @include justify-content(center);
     }
 }
+.last-news_item_date {
+    font-family:'Open Sans Italic';
+}
+.last-news_item_link {
+    h3 {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+    }
+}
 
 .last-news_item {
     width: 25%;
@@ -62,12 +72,6 @@
         color: rgba(115, 115, 115, 1);
     }
 }
-.title-uppercase {
-        font-size: 30px;
-        color: $textColorGreen;
-        text-transform: uppercase;
-        line-height: 40px;
-    }
 .news_item-text {
     .title-uppercase {
         margin-top: 15px;
